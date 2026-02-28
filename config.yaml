@@ -1,0 +1,26 @@
+Image:
+  width: 416
+  height: 416
+  dh: 0.075
+  dw: 0.075
+  type: 'jpg'
+  
+
+SDF:
+  bounding_box_min: -20.
+  bounding_box_max: 20.
+  voxel_res_list: [80,160,256,264]
+  
+  
+Train:
+  init_model_path: './data/satellite_1/init_model.obj'
+  RenderNet_weight_path: './render_network/best.pth'
+  epochs_list: [800, 100, 100]
+  lrate_list: [0.01, 0.001, 0.0001]
+  eik_weight: 0.1
+  curv_weight: 0.5
+  Ms_s_weight: 0.035
+  Input:
+    angle_path: './data/satellite_1/view_angle.npy'
+    image_path: './data/satellite_1/'
+  save_path: './results/'
