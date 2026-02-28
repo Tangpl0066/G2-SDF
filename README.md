@@ -15,7 +15,10 @@ pip install -r requirements.txt
 # Install rendering module
 python setup.py install
 ```
+## Pretrained Models
+Download the pretrained rendering network weights and place them in the 'render_network' folder:  
 
+https://github.com/Tangpl0066/G2-SDF/releases/tag/v1.0.0/best.pth
 ## Usage
 1: Model initialization: Run the MATLAB code model_init.m 
 
